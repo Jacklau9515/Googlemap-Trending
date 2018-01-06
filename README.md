@@ -2,7 +2,7 @@ Googlemap-Trending
 ==================
 Introduction:
 -------------
-######Get data through the API
+#Get data through the API
 This document is used to demostrate the **PHP + MySQL Database Dynamic Website Design**. According to this document, I used the Youtube API to get Top5 most viewed video for a day in different countries: 
 ```jquery
 $.getJSON(
