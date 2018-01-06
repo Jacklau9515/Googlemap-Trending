@@ -1,0 +1,48 @@
+#map{
+	border: 1px solid red;
+	    }
+		  
+#map-canvas{
+	border: 1px solid red;/*make the red border to divide web page clearly*/	
+    height: 800px;
+    width: 1000px;
+		}
+
+#catagoryname{
+	border: 1px solid red;/*make the red border to divide web page clearly*/
+	text-align: center;
+}
+
+#trending{
+	border: 1px solid red;/*make the red border to divide web page clearly*/	
+}
+
+#results{
+	border: 1px solid red;/*make the red border to divide web page clearly*/
+	height: 50px;
+    width: 885px;
+	text-align: center;
+	position: relative;
+	left: 1000px;
+	top: -802px;	
+}
+
+#youtube-result{
+	border: 1px solid black;/*make the red border to divide web page clearly*/	
+	height: 375px;
+    width: 885px;
+	text-align: center;
+	position: relative;
+	left: 1000px;
+	top: -802px;	
+}
+
+#twitter-result{
+	border: 1px solid black;/*make the red border to divide web page clearly*/	
+	height: 371px;
+    width: 885px;
+	text-align: center;
+	position: relative;
+	left: 1000px;
+	top: -802px;	
+}
