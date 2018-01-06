@@ -2,7 +2,7 @@ Googlemap-Trending
 ==================
 Introduction:
 -------------
-This document is used to demostrate the PHP + MySQL Database Dynamic Website Design. According to this document, I used the Youtube API to get Top5 most viewed video for a day in different countries: 
+This document is used to demostrate the **PHP + MySQL Database Dynamic Website Design**. According to this document, I used the Youtube API to get Top5 most viewed video for a day in different countries: 
 ```jquery
 $.getJSON(
 "https://www.googleapis.com/youtube/v3/videos",
@@ -13,7 +13,7 @@ $.getJSON(
  regionCode: countrycode[this.name],
  key: 'AIzaSyANeyPZ-jJtk45jm2zRz3GJQ8rP3P2i85k'},);
 ```
-and I used the Twitter API for popular tweets as well. However, since Twitter has the Rate limits that be divided into 15 minute intervals, I had to get and insert data to my remote database and then provide data to visitors to the Googlemap-Trending webpage from the database:
+and I used the Twitter API for popular tweets as well. However, since Twitter has the **Rate limits** that be divided into **15 minute **intervals, I had to get and insert data to my remote database and then provide data to visitors to the Googlemap-Trending webpage from the database:
 ```php
 <?php
 ignore_user_abort(); // run script in background
