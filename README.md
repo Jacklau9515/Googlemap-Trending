@@ -28,25 +28,25 @@ $consumerkey = 'Q30almJj8r635We8l9T4sWerk';
 $consumersecret = '79E2RQFK8fVWdd4tKa32uu6a7XkLIfyEZygD2CFLzb0plugcn6';
 			
 do{
-$count = 0;
-$twittername = [];
-$woeidarray = [];
-$twitter = new TwitterOAuth($consumerkey,$consumersecret,$accesstoken,$accesstokensecret);
+   $count = 0;
+   $twittername = [];
+   $woeidarray = [];
+   $twitter = new TwitterOAuth($consumerkey,$consumersecret,$accesstoken,$accesstokensecret);
 
-for ($j=0; $j<sizeof($user_id); $j++){
-$tweets = $twitter->get('trends/place',["id" => "$user_id[$j]"]);
-$i = 0;
-while($i<=5){
-   $name = $tweets[0]->trends[$i]->name;
-   $woeid = $tweets[0]->locations[0]->woeid;
-   $twittername[$count] = $name;
-   $woeidarray[$count] = $woeid;
-      $count++;
-      $i++;
-      }
-  }
-sleep($interval);// wait 15 minutes	
-}
-while(true);
+   for($j=0; $j<sizeof($user_id); $j++){
+	$tweets = $twitter->get('trends/place',["id" => "$user_id[$j]"]);
+	$i = 0;
+	while($i<=5){
+   	     	     $name = $tweets[0]->trends[$i]->name;
+   		     $woeid = $tweets[0]->locations[0]->woeid;
+                     $twittername[$count] = $name;
+                     $woeidarray[$count] = $woeid;
+      			$count++;
+      			 $i++;
+      		  }
+  	    }
+	sleep($interval);// wait 15 minutes	
+   }
+	while(true);
 ?>
 ```
