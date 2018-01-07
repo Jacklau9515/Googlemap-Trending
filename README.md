@@ -90,3 +90,6 @@ if($.inArray(rows[i][0], supportedcountries) != -1){
 			});
 		}
 ```
+### Publish and Release
+#### Install xampp
+![xampp icon](https://wilwebs.com/wp-content/uploads/2012/02/XAMPP-Team.png)
