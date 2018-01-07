@@ -92,4 +92,7 @@ if($.inArray(rows[i][0], supportedcountries) != -1){
 ```
 ### Publish and Release
 #### Install xampp
-![xampp icon](https://i1.wp.com/www.betterhostreview.com/wp-content/uploads/2017/02/xampp-logo.jpg?resize=500%2C142)
+After installing XAMPP start **apache** and **mysql** to run the server， then save all the files under the XAMPP **htdocs folder**.
+![xampp icon](https://github.com/Jacklau9515/MarkdownPhotos/blob/master/Xampp.JPG)
+#### Create a Table to Store Twitter Data
+Create the table which is used to store **Twitter Data** in the current database via **phpMyAdmin**
