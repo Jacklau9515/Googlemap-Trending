@@ -1,4 +1,6 @@
 # Googlemap-Trending
+## Overview:
+A demostration about using **PHP**, **JavaScript**, and relevant **API** to conduct a dynamic web programming that captures YouTube and Twitter trending from countries in the world through custom Google Maps.
 ## Introduction:
 ### Get data through the API
 This document is used to demostrate the **PHP + MySQL Database Dynamic Website Design**. According to this document, I used the Youtube API to get Top5 most viewed video for a day in different countries: 
@@ -99,3 +101,5 @@ Create the table which is used to store **Twitter Data** in the current database
 ![TwitterTable](https://github.com/Jacklau9515/MarkdownPhotos/blob/master/Gmap-phpMyAdmin.jpg)
 You can directly copy the MySQL command of the **mysql_create_twittertable.txt** file above, and run this SQL query/queries on table **dbname.twitter**.
 ![TwitterMySQL](https://github.com/Jacklau9515/MarkdownPhotos/blob/master/Gmap-MySQL.jpg)
+Run **home3newest.html** file under the XAMPP **htdocs folder** and you can get the latest top five trends belong to YouTube and Twitter from different countries around the world!
+![TrendingDemo](https://github.com/Jacklau9515/MarkdownPhotos/blob/master/GmapTweb.JPG)
