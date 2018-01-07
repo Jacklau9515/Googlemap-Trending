@@ -1,0 +1,8 @@
+CREATE TABLE `twitter` (
+ `Name` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_mysql500_ci NOT NULL,
+ `Url` varchar(255) NOT NULL,
+ `PromotedContent` varchar(255) NOT NULL,
+ `Query` varchar(255) NOT NULL,
+ `TweetVolume` varchar(255) NOT NULL,
+ `Userid` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1
