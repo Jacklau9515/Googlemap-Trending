@@ -96,6 +96,6 @@ After installing XAMPP start **apache** and **mysql** to run the server， then 
 ![xampp icon](https://github.com/Jacklau9515/MarkdownPhotos/blob/master/Xampp.JPG)
 #### Create a Table to Store Twitter Data
 Create the table which is used to store **Twitter Data** in the current database via **phpMyAdmin**
-![TwitterTable](https://github.com/Jacklau9515/MarkdownPhotos/blob/master/phpMyAdmin.JPG)
+![TwitterTable](https://github.com/Jacklau9515/MarkdownPhotos/blob/master/Gmap-phpMyAdmin.jpg)
 You can directly copy the MySQL command of the **mysql_create_twittertable.txt** file above, and run this SQL query/queries on table **dbname.twitter**.
-![TwitterMySQL](https://github.com/Jacklau9515/MarkdownPhotos/blob/master/MySQL-twitter.JPG)
+![TwitterMySQL](https://github.com/Jacklau9515/MarkdownPhotos/blob/master/Gmap-MySQL.jpg)
