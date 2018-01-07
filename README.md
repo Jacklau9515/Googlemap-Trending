@@ -54,7 +54,7 @@ do{
 ```
 ### Custom Google Maps (Fusion Tables Layer-Mouseover Map Styles)
 Create the clickable country & continent google maps by using Google Maps API to differentiate countries that support YouTube and Twitter services or not (Countries that support these two services are marked as red and unsupported as green).  Mouse click the countries on customized google maps will illustrate the top five trends for both YouTube and Twitter in this country.
-![Custom Google Maps](https://github.com/Jacklau9515/MarkdownPhotos/blob/master/Gmap.JPG)
+![Custom Google Maps](https://github.com/Jacklau9515/MarkdownPhotos/blob/master/Googlemap-Trending-pics/Gmap.JPG)
 ```javascript
 var rows = data['rows'];
 for (var i in rows) {
@@ -95,11 +95,11 @@ if($.inArray(rows[i][0], supportedcountries) != -1){
 ### Publish and Release
 #### Install xampp
 After installing XAMPP start **apache** and **mysql** to run the server， then save all the files under the XAMPP **htdocs folder**.
-![xampp icon](https://github.com/Jacklau9515/MarkdownPhotos/blob/master/Xampp.JPG)
+![xampp icon](https://github.com/Jacklau9515/MarkdownPhotos/blob/master/Googlemap-Trending-pics/Xampp.JPG)
 #### Create a Table to Store Twitter Data
 Create the table which is used to store **Twitter Data** in the current database via **phpMyAdmin**
-![TwitterTable](https://github.com/Jacklau9515/MarkdownPhotos/blob/master/Gmap-phpMyAdmin.jpg)
+![TwitterTable](https://github.com/Jacklau9515/MarkdownPhotos/blob/master/Googlemap-Trending-pics/Gmap-phpMyAdmin.jpg)
 You can directly copy the MySQL command of the **mysql_create_twittertable.txt** file above, and run this SQL query/queries on table **dbname.twitter**.
-![TwitterMySQL](https://github.com/Jacklau9515/MarkdownPhotos/blob/master/Gmap-MySQL.jpg)
+![TwitterMySQL](https://github.com/Jacklau9515/MarkdownPhotos/blob/master/Googlemap-Trending-pics/Gmap-MySQL.jpg)
 Run **home3newest.html** file under the XAMPP **htdocs folder** and you can get the latest top five trends belong to YouTube and Twitter from different countries around the world!
-![TrendingDemo](https://github.com/Jacklau9515/MarkdownPhotos/blob/master/GmapTweb.JPG)
+![TrendingDemo](https://github.com/Jacklau9515/MarkdownPhotos/blob/master/Googlemap-Trending-pics/GmapTweb.JPG)
