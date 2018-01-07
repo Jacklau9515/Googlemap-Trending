@@ -50,4 +50,43 @@ do{
 	while(true);
 ?>
 ```
-### Custom Google Maps
+### Custom Google Maps (Fusion Tables Layer-Mouseover Map Styles)
+Create the clickable country & continent google maps by using Google Maps API to differentiate countries that support YouTube and Twitter services or not (Countries that support these two services are marked as red and unsupported as green).  Mouse click the countries on customized google maps will illustrate the top five trends for both YouTube and Twitter in this country.
+![Custom Google Maps](https://github.com/Jacklau9515/MarkdownPhotos/blob/master/Gmap.JPG)
+```javascript
+var rows = data['rows'];
+for (var i in rows) {
+	if (rows[i][0] != 'Antarctica') { 
+	//make array of all countries which are unsupported $.inArray(rows[i][0], supportedcountries) != -1
+        var newCoordinates = [];
+        var geometries = rows[i][1]['geometries'];
+        if (geometries) {
+		for (var j in geometries) {
+		newCoordinates.push(constructNewCoordinates(geometries[j]));
+          	}
+        }else{
+	newCoordinates = constructNewCoordinates(rows[i][1]['geometry']);}
+var selectedcountry;
+if($.inArray(rows[i][0], supportedcountries) != -1){
+	var country = new google.maps.Polygon({
+			paths: newCoordinates,
+          		strokeColor: '#ff9900',
+          		strokeOpacity: 1,
+          		strokeWeight: 0.3,
+          		fillColor: '#00FF00',
+          		fillOpacity: 0.1,
+          		name: rows[i][0]
+        		});
+		}else{
+	var country = new google.maps.Polygon({
+          		paths: newCoordinates,
+          		strokeColor: '#ff9900',
+          		strokeOpacity: 1,
+          		strokeWeight: 0.3,
+		  	clickable: false,
+          		fillColor: '#800000',
+          		fillOpacity: 0.1,
+          		name: 'undefined'
+			});
+		}
+```
