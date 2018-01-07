@@ -92,4 +92,4 @@ if($.inArray(rows[i][0], supportedcountries) != -1){
 ```
 ### Publish and Release
 #### Install xampp
-![xampp icon](https://wilwebs.com/wp-content/uploads/2012/02/XAMPP-Team.png)
+![xampp icon](https://i1.wp.com/www.betterhostreview.com/wp-content/uploads/2017/02/xampp-logo.jpg?resize=500%2C142)
